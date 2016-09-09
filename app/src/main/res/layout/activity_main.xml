@@ -30,4 +30,11 @@
         android:layout_below="@+id/Btn_Start"
         android:text="쓰레드 종료"
         />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/Btn_test"
+        android:onClick="onClick"
+        android:layout_below="@+id/Btn_End"
+        />
 </RelativeLayout>

@@ -5,6 +5,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Handler handler;
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
             case R.id.Btn_Start:
                 NumThr=new NumThread(true);
                 NumThr.start();
+                break;
+            case R.id.Btn_test:
+                Toast.makeText(MainActivity.this,"test ",Toast.LENGTH_SHORT).show();
+                break;
         }
     }
 
